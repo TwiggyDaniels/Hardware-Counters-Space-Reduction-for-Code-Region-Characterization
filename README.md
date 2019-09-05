@@ -6,11 +6,11 @@ https://www.researchgate.net/publication/335232384_Hardware_Counters'_Space_Redu
 
 https://link.springer.com/chapter/10.1007/978-3-030-29400-7_6
 
-In this paper we introduce a methodology, based in PCA and correlation analysis, for reducing the number of hardware performance counters needed for characterizing an OpenMP parallel region.
+In this paper we introduce a methodology, based in Principal Component Analysis (PCA) and correlation analysis, for reducing the number of hardware performance counters needed for characterizing an OpenMP parallel region.
 
-|**Please, reference this paper if you use these results!!**|
+|**If you use these results, please, reference this paper as:**|
 |-----------------------------------------------------------|
-|Alcaraz J., Sikora A., César E. (2019) Hardware Counters’ Space Reduction for Code Region Characterization. In: Yahyapour R. (eds) Euro-Par 2019: Parallel Processing. Euro-Par 2019. Lecture Notes in Computer Science, vol 11725. Springer, Cham|
+|Alcaraz J., Sikora A., César E. (2019) Hardware Counters’ Space Reduction for Code Region Characterization. In: Yahyapour R. (eds) Euro-Par 2019: Parallel Processing. Euro-Par 2019: 74-86. Lecture Notes in Computer Science, vol 11725. Springer, Cham|
 
 
 ## How to execute the examples
@@ -27,16 +27,16 @@ In order to run the examples you need to install:
 ## File description
 
 * PCA and Correlation All Hardware Counters.ipynb :
-	Script in jupyter notebook which uses R to make a PCA with the information obtained with the hardware performance counters for the different patterns.
+	Script in jupyter notebook which uses R to make a PCA with the information obtained with the hardware performance counters for the four different patterns in STREAM benchmark.
 	After the PCA is executed, a correlation analysis is performed and three correlation matrices are shown using different sorting of the columns.
 
 * PCA and Correlation Reduced List.ipynb :
 	This is the final evolution of the previous jupyter notebook. In this case we have reduced the number of available events to the limit we found without losing information.
-	To reproduce the middle steps, the previous script should be executed multiple times reducing the number of events until this script is obtained.
+	To reproduce the middle steps, the previous script (PCA and Correlation All Hardware Counters.ipynb) should be executed multiple times. In each execution, the user should look for correlated hardware performance counters and discard one if the correlation makes sense; i.e.: if L2 and branches are correlated, this correlation may appear because of the structure of the loops in this case. But L2 and branches don't have a direct relationship.
 	
 * Neural Network.ipynb :
 	This is a jupyter notebook using Python. A simple neural network is used to verify that the resulting hardware performance counters can be used to identify the different parallel regions.
-	We use a simple neural network with one hidden layer. The data used for training it consists of the results of the executions for all data sizes except for two, which are used in the predictions to test if the characterization can be performed.
+	We use a simple neural network with one hidden layer. The data used for training consists of the results of the executions for all data sizes but two sizes are removed. The removed sizes are used in the predictions to test if the characterization can be performed successfuly.
 
 Sometimes github fails opening jupyter notebooks, if this problem appears, use nbviewer: https://nbviewer.jupyter.org/
 
