@@ -8,7 +8,7 @@ https://link.springer.com/chapter/10.1007/978-3-030-29400-7_6
 
 In this paper we introduce a methodology, based in PCA and correlation analysis, for reducing the number of hardware performance counters needed for characterizing an OpenMP parallel region.
 
-** Please, reference this paper if you use these results!! **
+|**Please, reference this paper if you use these results!!**|
 
 
 ## How to execute the examples
