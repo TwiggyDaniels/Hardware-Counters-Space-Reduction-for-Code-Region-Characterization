@@ -10,8 +10,7 @@ In this paper we introduce a methodology, based in PCA and correlation analysis,
 
 |**Please, reference this paper if you use these results!!**|
 |-----------------------------------------------------------|
-|Alcaraz J., Sikora A., César E. (2019) Hardware Counters’ Space Reduction for Code Region Characterization. In: Yahyapour| 
-|R. (eds) Euro-Par 2019: Parallel Processing. Euro-Par 2019. Lecture Notes in Computer Science, vol 11725. Springer, Cham|
+|Alcaraz J., Sikora A., César E. (2019) Hardware Counters’ Space Reduction for Code Region Characterization. In: Yahyapour R. (eds) Euro-Par 2019: Parallel Processing. Euro-Par 2019. Lecture Notes in Computer Science, vol 11725. Springer, Cham|
 
 
 ## How to execute the examples
