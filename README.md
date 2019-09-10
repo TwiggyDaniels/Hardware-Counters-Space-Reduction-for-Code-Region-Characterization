@@ -46,14 +46,14 @@ The database was compressed in zip format using winrar to divide it in three par
 
 The columns of the database are:
 
-* **id**. This field is used as an identifier of the row along with size_vector, comp_opt and label.
+* **id**. This field is used as an identifier of the row along with size_vector, comp_opt and label. This field is composed of positive integers.
 
 * **size_vector**. This is the number of elements of each vector used in STREAM. The used sizes are:
-	1K; 2K; 3K; 4K; 5K; 6K; 7K; 8K; 9K; 10K; 20K; 30K; 40K; 50K; 60K; 70K; 80K; 90K; 100K; 200K; 300K; 400K; 500K; 600K; 700K; 800K; 900K; 1M; 2M; 3M; 4M; 5M; 6M; 7M; 8M; 9M; 10M; 20M; 30M; 40M; 50M; 60M; 70M; 80M; 90M; 100M; 110M; 120M; 130M; 140M; 150M; 160M; 170M; 180M; 190M; 200M;
+	1K; 2K; 3K; 4K; 5K; 6K; 7K; 8K; 9K; 10K; 20K; 30K; 40K; 50K; 60K; 70K; 80K; 90K; 100K; 200K; 300K; 400K; 500K; 600K; 700K; 800K; 900K; 1M; 2M; 3M; 4M; 5M; 6M; 7M; 8M; 9M; 10M; 20M; 30M; 40M; 50M; 60M; 70M; 80M; 90M; 100M; 110M; 120M; 130M; 140M; 150M; 160M; 170M; 180M; 190M; 200M. This field is composed of positive integers.
 
-* **comp_opt**. This column describes the optimization flag used to compile STREAM. The used optimizations are: O0 and O2.
+* **comp_opt**. This column describes the optimization flag used to compile STREAM. The used optimizations are: O0 and O2. This field is composed of strings.
 
-* **label**. STREAM has four patterns and each pattern has a different label: copy_e, add_e, scale_e and triad_e. 
+* **label**. STREAM has four patterns and each pattern has a different label: copy_e, add_e, scale_e and triad_e. This field is composed of strings.
 
 * And one column for each of the hardware performance counters (57 were available in our test machine with Xeon E5645). The values in this columns are positive integers.
 
