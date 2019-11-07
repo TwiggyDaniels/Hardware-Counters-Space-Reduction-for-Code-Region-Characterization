@@ -1,6 +1,6 @@
 ## About this repository
 
-This repository contains the experimentation done for the paper "Hardware Counters’ Space Reduction for Code Region Characterization" published in Euro-Par 2019, which can be found in:
+This repository contains a fork of the experimentation done for the paper "Hardware Counters’ Space Reduction for Code Region Characterization" published in Euro-Par 2019, which can be found in:
 
 https://www.researchgate.net/publication/335232384_Hardware_Counters'_Space_Reduction_for_Code_Region_Characterization
 
@@ -40,7 +40,7 @@ In order to run the examples you need to install:
 
 Sometimes github fails opening jupyter notebooks, if this problem appears, use nbviewer: https://nbviewer.jupyter.org/
 
-## Database descriptopn
+## Database Description
 
 The database was compressed in zip format using winrar to divide it in three parts because of github's file size restrictions.
 
